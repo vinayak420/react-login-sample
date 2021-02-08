@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: whitesmoke;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(39, 5, 49);
+}
+
+.logo{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.logo h4{
+  font-weight: 300;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white; 
+}
+
+.login-form{
+  width: 40%;
+  margin: 5% auto;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.register-form{
+  width: 40%;
+  margin: 5% auto;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.register-form input{
+  margin: 5% auto;
+  width: 95%;
+  margin-bottom: 0%;
+}
+
+#first-row{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0%;
+}
+
+#first-row input{
+width: 45%;
+}
+
+#last-row{
+  display: flex;
+  justify-content: space-around;
+}
+#last-row input{
+  width: 45%;
+  margin-bottom: 5%;
+}
+
+.register-form h3{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(39, 5, 49);
+}
+
+.login-form h3{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(39, 5, 49);
+}
+
+.login-form input{
+  margin: 5% auto;
+  width: 70%;
+}
+
+.submit{
+background-color: rgb(39, 5, 49);
+color: white;
+}
+
+.submit:hover{
+  background-color: white;
+  color: rgb(39, 5, 49);
+}
+hr{
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid rgb(39, 5, 49);
+}
+
+#msg{
+  text-align: center;
+  margin: 1%;
+}
+
+#error{
+  text-align: center;
+  font-weight: bold;
+  color: red;
 }
